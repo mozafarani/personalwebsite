@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import {ThemeProvider} from '@primer/react'
+import {BaseStyles, Box, Heading} from '@primer/react'
+
+
+const theme = {
+  colors: {
+    canvas: {
+      default: '#fff'
+    }
+  }
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React Maybe?
-        </a>
-      </header>
-    </div>
+    <BaseStyles>
+    <Box m={4}>
+      <Heading sx={{mb: 2}}>Hello, world!</Heading>
+    </Box>
+  </BaseStyles>
   );
 }
 
