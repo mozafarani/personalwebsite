@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import {Box} from '@primer/react'
+import {PageLayout} from '@primer/react'
 
 function App() {
   return (
@@ -17,7 +19,13 @@ function App() {
         >
           Learn React
         </a>
+        <Box>
+          <PageLayout>
+            <h1>Does this work?</h1>
+          </PageLayout>
+        </Box>
       </header>
+
     </div>
   );
 }
