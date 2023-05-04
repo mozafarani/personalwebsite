@@ -1,30 +1,51 @@
-import logo from './logo.svg';
 import './App.css';
-import {Box} from '@primer/react'
-import {PageLayout} from '@primer/react'
+import Box from '@mui/material/Box';
+import myImg from './img/Mohammed_Alzafarani.jpeg';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Box>
-          <PageLayout>
-            <h1>Does this work?</h1>
-          </PageLayout>
-        </Box>
-      </header>
+
+      <h2 style={{ alignItems: 'left', marginLeft: '2%', marginTop: "1.5%", fontWeight: 'bold', fontSize: 40 }}>Mohammed Alzafarani</h2>
+
+      <Box
+        sx={{
+          width: '22%',
+          height: "20%",
+          margin: 'auto',
+          marginLeft: '10%',
+          marginTop: '7%',
+          borderRadius: '10px',
+          backgroundColor: '#',
+        }}
+      >
+        <img src={myImg} alt='' width={'93%'} height={'100%'}></img>
+
+
+      </Box>
+
+      <Box
+        sx={{
+          width: '22%',
+          height: "20%",
+          margin: 'auto',
+          marginLeft: '10%',
+          marginTop: '7%',
+          borderRadius: '10px',
+          backgroundColor: '#',
+        }}
+      >
+        <body>Hi I am Mohammed Alzafarani and This is my website!</body>
+        Links:
+        Github:https://github.com/mozafarani
+        Linkedin:https://www.linkedin.com/in/mohammed-alzafarani-7b1b3a1b0/
+        Email: mohammefm@gmail.com
+
+        
+
+
+      </Box>
+
 
     </div>
   );
